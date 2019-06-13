@@ -7,12 +7,16 @@ end
 # This is a convenient place to define variables and/or set up new object instances,
 # so they will be available to test and play around with in your console
 
-dave = Customer.new("Dave", "B")
-tri = Customer.new("Tri", "Idk")
+dave = Customer.new("David Boehmer")
+avi = Customer.new("Avi Flombaum")
+other_person = Customer.new("That Guy")
 
-wendys = Restaurant.new("Wendy's")
 marias = Restaurant.new("Maria's Empanadas")
-cheeba_hut = Restaurant.new("Cheeba Hut")
+adelitas = Restaurant.new("Adelitas")
+steubens = Restaurant.new("Steuben's")
+
+dave.add_review(adelitas, "things were great. they were so great. they were the greatest things.", 5)
+avi.add_review(marias, "I mean, the place is across the street! like, RIGHT across the street!", 5)
 
 binding.pry
 0 #leave this here to ensure binding.pry isn't the last line
